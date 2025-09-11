@@ -1,2 +1,81 @@
 ال Comend Lean
+
+git clone <link repo> 
+
+git status
+
+git init
+
 git add . OR file name
+
+git reset head file name
+
+git commit -m "massege"
+
+git remote add origin <link repo>
+
+git push
+git push -u <name remote> <name branch>
+
+
+git remote -v
+
+git pull
+
+git restore --staged * OR <name file>
+
+git clean -n
+git clean -f
+
+git log
+
+git reset <hash commit>
+git reset --hard <hash commit>
+
+git push origin main --force
+
+
+Configuration:
+git config --list OR --l
+git help config
+git config -- global user.email
+git config -- global user.email "zahraa@gmail.com"
+git config -l --show-origin
+git config -- global user.email ""
+git config -- global --unset user.email
+git config -- global --edit
+
+
+public key:
+ssh-keygen -t rsa 4096 -c "zahraa@gmail.com"
+ssh -T git@github.com
+
+Aliases:
+git config --global alias.<shortcut> <how you want shortcut> 
+EX1: git config --global alias.st status => ( git status <=> git st ) 
+EX2: git config --global alias.cm "commit -m" => ( git commit -m "test" <=> git cm "test" ) 
+
+
+Branch:
+git branch
+git branch <name branch>
+git checkout <name branch>
+git branch -d OR -D <name branch>
+git checkout -b <name branch>
+git branch -m <new name for branch>
+git merge <name branch>
+
+Stash:
+git stash 
+git stash list
+git stash pop
+git stash apply 
+git stash pop stash@(<number stash>)
+git stash save "<commit>"
+git stash drop <nothing> or stash@(<number stash>)
+git stash show <nothing> or stash@(<number stash>)
+git stash clear
+
+
+
+
